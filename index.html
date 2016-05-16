@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
   </head>
 
   <body>
@@ -19,21 +19,23 @@
     <main>
       <div class="container">
         <div class="row">
+
           <div class="col-md-5">
             <form class="form-group form-group-lg">
               <label for="wineSearch">Find a Pairing:</label>
-              <input type="text" class="form-control center-block" id="wineSearch" placeholder="Your Wine">
-              <input type="search" value="Pair!" class="btn btn-default btn-lg">
+              <input type="search" class="form-control center-block" id="wineSearch" placeholder="Your Wine">
+              <input type="submit" value="Pair!" class="btn btn-default btn-lg">
             </form>
-            <div class="row hidden">
-              <h3 class="input text-center">Your Wine</h3>
-              <div class="col-md-6">
+
+            <div class="row">
+              <h2 id="inputWine"class="text-center"></h3>
+              <div class="col-md-6 hidden">
                 <h4 class="text-center">Pairs well with: </h4>
-                <p>inputPairs</p>
+                <p class="pairs">inputPairs</p>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 hidden">
                 <h4 class="text-center">Pairs perfectly with: </h4>
-                <p>inputPerf</p>
+                <p class="perf">inputPerf</p>
               </div>
             </div>
           </div>
@@ -49,8 +51,9 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="wine-object.js"></script>
     <script type="text/javascript" src="app.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
   </body>
 </html>
