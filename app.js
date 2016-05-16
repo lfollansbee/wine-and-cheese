@@ -18,6 +18,7 @@ function search(input){
       console.log(name);
       return input;
       return name;
+      console.log(cheesePair);
     }
   }
 }
@@ -31,7 +32,7 @@ $(document).ready(function(){
     event.preventDefault();
     wineEntered = $("#wineSearch").val().toLowerCase();
     $("#inputWine").empty();
-    $("#inputWine").append(wineEntered);
+    $("#inputWine").append(wineEntered.toUpperCase());
     console.log(wineEntered);
     search(wineEntered)
   })

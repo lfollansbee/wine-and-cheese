@@ -1,0 +1,9 @@
+{
+  "firebase": "wine-and-cheese-test",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

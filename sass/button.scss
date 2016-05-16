@@ -1,0 +1,22 @@
+.btn{
+  color: $lightbeige;
+  background-color:$darkred;
+  font-family: 'Poiret One', cursive;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  &:hover{
+    background-color: $lightred;
+    color: $darkred;
+    font-weight: bold;
+  }
+  &:active{
+    @extend .btn;
+  }
+  &:visited{
+    @extend .btn;
+  }
+  &:focus{
+    @extend .btn
+  }
+}
