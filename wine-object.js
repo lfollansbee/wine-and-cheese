@@ -45,5 +45,8 @@ var wine = {
     types:['franzia','three buck chuck'],
     pairs: "String cheese",
     perf: "Velveeta",
+  },
+  notPresent:{
+    types:undefined
   }
 }
