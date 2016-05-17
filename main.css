@@ -44,3 +44,7 @@ label {
   .pairings p {
     font-size: 1.75rem;
     font-weight: bold; }
+
+.not-found {
+  color: #4d1a1c;
+  font-weight: bold; }

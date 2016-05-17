@@ -6,15 +6,19 @@ function search(input){
     cheesePair = wine[name].pairs;
     cheesePerf = wine[name].perf;
     currentType = wine[name].types;
-    inSystem = isInSystem(currentType, input);
+    inSystem = isInSystem(currentType, input);//runs the current type of wine through the system function to see if the input wine is in it's types array
     if (inSystem === true){
-      return input;
+      return wine[i];//if found, this ends the function
     }
   }
 }
 
-function isInSystem(kind, input){
-  if (kind.indexOf(input) > -1) {
+function isInSystem(currentType, input){
+  if(currentType === undefined){
+    $(".not-found").removeClass("hidden")
+    return false
+  }
+  if (currentType.indexOf(input) > -1) {
     return true;
   }else{
     return false;
@@ -24,10 +28,11 @@ function isInSystem(kind, input){
 $(document).ready(function(){
   $(".form-group").on("submit", function(){
     event.preventDefault();
-    wineEntered = $("#wineSearch").val().toLowerCase();
-    search(wineEntered)
-    $("#inputWine").empty();
-    $("#inputWine").append(wineEntered.toUpperCase());
+    wineEntered = $("#wineSearch").val().toLowerCase();//creates variable for the input wine type
+    $(".not-found").addClass("hidden")
+    search(wineEntered);//runs function to search for wine in wine-object
+    $("#inputWine").empty();//clearing previous search
+    $("#inputWine").append(wineEntered.toUpperCase());//appends the entered wine to the DOM
     showPairings();
   })
 });
