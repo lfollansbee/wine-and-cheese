@@ -43,7 +43,7 @@ var wine = {
   },
   jokes:{
     types:['franzia','three buck chuck'],
-    pairs: "string cheese",
-    perf: "velveeta",
+    pairs: "String cheese",
+    perf: "Velveeta",
   }
 }

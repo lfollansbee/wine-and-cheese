@@ -19,12 +19,13 @@ function search(input){
       return input;
     }
     // else{
-    //   return default statement
+    //   return
     // }
   }
 }
 
 function showPairings(){
+  $(".pairings").removeClass("hidden");
   $("#pairs-heading, #perf-heading").addClass("hidden");
   $("#pairs, #perf").empty();
   if(cheesePair != undefined){
@@ -44,7 +45,6 @@ $(document).ready(function(){
     $("#inputWine").empty();
     $("#inputWine").append(wineEntered.toUpperCase());
     search(wineEntered)
-    $(".pairings").removeClass("hidden");
     showPairings();
   })
 });

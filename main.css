@@ -18,7 +18,8 @@ h1 {
 
 .subheading, label, #wineSearch {
   font-family: 'Poiret One', cursive;
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-weight: bold; }
 
 label {
   font-size: 2.5rem;
@@ -34,3 +35,12 @@ label {
   font-size: 5rem;
   margin-top: 10px;
   word-spacing: .5em; }
+
+.pairings {
+  font-family: 'Poiret One', cursive; }
+  .pairings h4 {
+    font-size: 2.5rem;
+    font-weight: bold; }
+  .pairings p {
+    font-size: 1.75rem;
+    font-weight: bold; }
