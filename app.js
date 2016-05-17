@@ -11,14 +11,11 @@ function conditional(kind, input){
 function search(input){
   for(var i = 0; i < wines.length; i++){
     name = wines[i];
-    currentType = wine[name].types;
     cheesePair = wine[name].pairs;
+    currentType = wine[name].types;
     inSystem = conditional(currentType, input);
     if (inSystem === true){
-      console.log(name);
       return input;
-      return name;
-      console.log(cheesePair);
     }
   }
 }
@@ -29,7 +26,8 @@ $(document).ready(function(){
     wineEntered = $("#wineSearch").val().toLowerCase();
     $("#inputWine").empty();
     $("#inputWine").append(wineEntered.toUpperCase());
-    console.log(wineEntered);
     search(wineEntered)
+    $("#pairs").empty();
+    $("#pairs").append(cheesePair);
   })
 });

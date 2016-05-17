@@ -1,17 +1,4 @@
-// var wine = {
-//   boldRed:['malbec', 'syrah', 'shiraz', 'petite sirah', 'pinotage'],
-//   mediumRed:['merlot', 'zinfandel', 'zin', 'cabernet franc', 'tempranillo', 'sangiovese'],
-//   lightRed:['pinot noir', 'grenache', 'gamay'],
-//   rose:['white zinfandel', 'rose', 'garnacha rosado'],
-//   richWhite:['chardonnay', 'chard', 'semillon', 'viognier'],
-//   lightWhite:['sauvignon blanc', 'albarino', 'pinot blanc', 'pinot gris', 'pinot grigio'],
-//   sparkling:['champagne', 'prosecco', 'cava', 'sparkling wine', 'sparkling rose', 'cremant'],
-//   sweetWhite:['moscato', 'riesling', 'chenin blanc'],
-//   dessert:['port', 'sherry', 'madeira', 'muscat'],
-//   jokes:['franzia','three buck chuck']//velveeta
-// }
-
-cheese = ["Soft cheeses such as brie and mascarpone.", "Pungent cheeses. Try gorgonzola or a nice bleu cheese.", "Hard cheeses, like a tasty cheddar, pecroino, asiago, or parmesan."]
+cheese = ["Soft cheeses such as brie and mascarpone.<br>", "Pungent cheeses. Try gorgonzola or a nice bleu cheese.<br>", "Hard cheeses, like a tasty cheddar, pecroino, asiago, or parmesan."]
 var wine = {
   boldRed:{
     types:['malbec', 'syrah', 'shiraz', 'petite sirah', 'pinotage'],
@@ -32,7 +19,7 @@ var wine = {
     pairs:[cheese[0],cheese[1],cheese[2]],
   },
   richWhite:{
-    types:['chardonnay', 'chard', 'semillon', 'viognier'],
+    types:['chardonnay', 'semillon', 'viognier'],
     pairs:cheese[2],
     perf: cheese[0],
   },
@@ -47,7 +34,7 @@ var wine = {
   sweetWhite:{
     types:['moscato', 'riesling', 'chenin blanc'],
     pairs:[cheese[0],cheese[1]],
-    perf:["gouda"]
+    perf:["Gouda!"]
   },
   dessert:{
     types:['port', 'sherry', 'madeira', 'muscat'],

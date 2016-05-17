@@ -23,19 +23,17 @@
           <div class="col-md-5">
             <form class="form-group form-group-md">
               <label for="wineSearch">Find a Pairing:</label>
-              <input type="search" class="form-control center-block" id="wineSearch" placeholder="Your Wine">
+              <input type="search" class="form-control center-block" id="wineSearch" placeholder="Your Wine" autocomplete="off">
               <input type="submit" value="Pair!" class="btn btn-default btn-md">
             </form>
 
             <div class="row">
               <h2 id="inputWine"class="text-center"></h3>
-              <div class="col-md-6 hidden">
-                <h4 class="text-center">Pairs well with: </h4>
-                <p class="pairs">inputPairs</p>
-              </div>
-              <div class="col-md-6 hidden">
-                <h4 class="text-center">Pairs perfectly with: </h4>
-                <p class="perf">inputPerf</p>
+              <div class="pairings col-md-12">
+                <h4>Pairs well with: </h4>
+                <p id="pairs"></p>
+                <h4>Pairs perfectly with: </h4>
+                <p id="perf"></p>
               </div>
             </div>
           </div>
