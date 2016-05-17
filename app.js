@@ -5,6 +5,7 @@ function search(input){
     name = wines[i];
     cheesePair = wine[name].pairs;
     cheesePerf = wine[name].perf;
+    // currentImg = wine[name].img;
     currentType = wine[name].types;
     inSystem = isInSystem(currentType, input);//runs the current type of wine through the system function to see if the input wine is in it's types array
     if (inSystem === true){
@@ -41,6 +42,7 @@ function showPairings(){
   $(".pairings").removeClass("hidden")
   $("#pairs-heading, #perf-heading").addClass("hidden");
   $("#pairs, #perf").empty();
+  // $(".img").attr("src", "currentImg")
   if(cheesePair != undefined){
     $("#pairs-heading").removeClass("hidden");
     $("#pairs").append(cheesePair);
