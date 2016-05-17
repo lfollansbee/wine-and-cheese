@@ -11,7 +11,7 @@
 //   jokes:['franzia','three buck chuck']//velveeta
 // }
 
-cheese = ["soft", "pungent", "hard"]
+cheese = ["Soft cheeses such as brie and mascarpone.", "Pungent cheeses. Try gorgonzola or a nice bleu cheese.", "Hard cheeses, like a tasty cheddar, pecroino, asiago, or parmesan."]
 var wine = {
   boldRed:{
     types:['malbec', 'syrah', 'shiraz', 'petite sirah', 'pinotage'],
@@ -47,6 +47,7 @@ var wine = {
   sweetWhite:{
     types:['moscato', 'riesling', 'chenin blanc'],
     pairs:[cheese[0],cheese[1]],
+    perf:["gouda"]
   },
   dessert:{
     types:['port', 'sherry', 'madeira', 'muscat'],
