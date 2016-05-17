@@ -32,4 +32,5 @@ label {
 #inputWine {
   font-family: 'Italianno', cursive;
   font-size: 5rem;
-  margin-top: 10px; }
+  margin-top: 10px;
+  word-spacing: .5em; }

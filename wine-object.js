@@ -34,7 +34,7 @@ var wine = {
   sweetWhite:{
     types:['moscato', 'riesling', 'chenin blanc'],
     pairs:[cheese[0],cheese[1]],
-    perf:["Gouda!"]
+    perf:["My favorite's gouda."]
   },
   dessert:{
     types:['port', 'sherry', 'madeira', 'muscat'],
