@@ -23,10 +23,6 @@ function search(input){
   }
 }
 
-// var inputPairs = wine[name].pairs;
-// var inputPerf = wine[name].perf;
-// console.log(inputPairs + inputPerf)
-
 $(document).ready(function(){
   $(".form-group").on("submit", function(){
     event.preventDefault();
