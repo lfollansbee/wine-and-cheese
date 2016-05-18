@@ -26,28 +26,32 @@ function isInSystem(currentType, input){
   }
 }
 
-// function imgSwap()
-
 $(document).ready(function(){
   $(".form-group").on("submit", function(){
     event.preventDefault();
-    $(".not-found").addClass("hidden")//hide error message if it was there from previous search
+    $(".not-found").addClass("hidden")//hide error message if it was there from previous search - see function isInSystem
     wineEntered = $("#wineSearch").val().toLowerCase();//creates variable for the input wine type
     search(wineEntered);//runs function to search for wine in wine-object
-    $("#inputWine").empty();//clearing previous search
-    $("#inputWine").append(wineEntered.toUpperCase());//appends the entered wine to the DOM
+    displayInput(wineEntered)
     showPairings();
     changeImg();
+    showWineClass();
     // $(".gouda").removeClass("hidden");
   })
 });
 
+function displayInput(){
+  $("#inputWine").empty();//clearing previous search
+  if (wineClass != "notPresent"){
+    $("#inputWine").append(wineEntered.toUpperCase());//appends the entered wine to the DOM
+  }
+}
+
 function changeImg(){
-  if(currentImg === undefined){
+  if(currentImg === undefined){//if there's no img for that class, change it to the default img
     $(".img").attr("src", "http://winefolly.com/wp-content/uploads/2014/11/wine-and-cheese-pairing.jpg")
   }else{
     $(".img").attr("src", currentImg)
-
   }
 }
 
@@ -62,5 +66,12 @@ function showPairings(){
   if (cheesePerf != undefined){//if the wine has a perfect pairing
     $("#perf-heading").removeClass("hidden");//display heading
     $("#perf").append(cheesePerf);//display info
+  }
+}
+
+function showWineClass(){
+  $("#wine-class").empty();//clears info from previous search
+  if (wineClass != "notPresent"){
+    $("#wine-class").append(wineClass);//display info
   }
 }
