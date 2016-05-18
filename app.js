@@ -1,5 +1,10 @@
-wines = Object.keys(wine);
+$(document).ready(function(){
+  $.get("https://lit-island-79409.herokuapp.com/", function(data) {
+    var cheese = data.cheese;
+    var wine = data.wine;
+});
 
+wines = Object.keys(wine);
 function search(input){
   for(var i = 0; i < wines.length; i++){
     wineClass = wines[i];
