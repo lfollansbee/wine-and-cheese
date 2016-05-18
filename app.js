@@ -1,13 +1,16 @@
+var wine = 0
+var allWines = 0
 $(document).ready(function(){
-  $.get("https://lit-island-79409.herokuapp.com/", function(data) {
-    var cheese = data.cheese;
-    var wine = data.wine;
+  $.get("https://warm-spire-51273.herokuapp.com/", function(data) {
+    cheese = data.cheese;
+    wine = data.wine;
+    allWines = Object.keys(data.wine);
+  });
 });
 
-wines = Object.keys(wine);
 function search(input){
-  for(var i = 0; i < wines.length; i++){
-    wineClass = wines[i];
+  for(var i = 0; i < allWines.length; i++){
+    wineClass = allWines[i];
     cheesePair = wine[wineClass].pairs;
     cheesePerf = wine[wineClass].perf;
     currentImg = wine[wineClass].img;
@@ -20,7 +23,7 @@ function search(input){
 }
 
 function isInSystem(currentType, input){
-  if(currentType === undefined){
+  if(wineClass === "notPresent"){
     $(".not-found").removeClass("hidden")//if reach end of object without finding wine, display not found message
     return false
   }
@@ -34,7 +37,7 @@ function isInSystem(currentType, input){
 $(document).ready(function(){
   $(".form-group").on("submit", function(){
     event.preventDefault();
-    $(".not-found").addClass("hidden")//hide error message if it was there from previous search - see function isInSystem
+    $(".not-found").addClass("hidden")//hide error message if it was there from previous search - see function isInSys
     wineEntered = $("#wineSearch").val().toLowerCase();//creates variable for the input wine type
     search(wineEntered);//runs function to search for wine in wine-object
     displayInput(wineEntered)
@@ -66,6 +69,7 @@ function showPairings(){
   $("#pairs, #perf").empty();//clears info from previous search
   if(cheesePair != undefined){//if the wine pairs with something
     $("#pairs-heading").removeClass("hidden");//display heading
+    console.log(cheesePair);
     $("#pairs").append(cheesePair);//display info
   }
   if (cheesePerf != undefined){//if the wine has a perfect pairing
