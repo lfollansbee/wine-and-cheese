@@ -44,7 +44,7 @@ $(document).ready(function(){
     showPairings();
     changeImg();
     showWineClass();
-    // $(".gouda").removeClass("hidden");
+    $(".gouda").removeClass("hidden");
   })
 });
 
