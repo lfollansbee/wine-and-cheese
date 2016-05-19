@@ -1,62 +1,64 @@
-// var wine = {
-//   boldRed:['malbec', 'syrah', 'shiraz', 'petite sirah', 'pinotage'],
-//   mediumRed:['merlot', 'zinfandel', 'zin', 'cabernet franc', 'tempranillo', 'sangiovese'],
-//   lightRed:['pinot noir', 'grenache', 'gamay'],
-//   rose:['white zinfandel', 'rose', 'garnacha rosado'],
-//   richWhite:['chardonnay', 'chard', 'semillon', 'viognier'],
-//   lightWhite:['sauvignon blanc', 'albarino', 'pinot blanc', 'pinot gris', 'pinot grigio'],
-//   sparkling:['champagne', 'prosecco', 'cava', 'sparkling wine', 'sparkling rose', 'cremant'],
-//   sweetWhite:['moscato', 'riesling', 'chenin blanc'],
-//   dessert:['port', 'sherry', 'madeira', 'muscat'],
-//   jokes:['franzia','three buck chuck']//velveeta
-// }
-
-cheese = ["Soft cheeses such as brie and mascarpone.", "Pungent cheeses. Try gorgonzola or a nice bleu cheese.", "Hard cheeses, like a tasty cheddar, pecroino, asiago, or parmesan."]
-var wine = {
-  boldRed:{
-    types:['malbec', 'syrah', 'shiraz', 'petite sirah', 'pinotage'],
+cheese= ["Soft cheeses such as goat cheese, brie, or mascarpone.<br>", "Pungent cheeses. Try gorgonzola or a nice bleu cheese.<br>", "Hard cheeses, like a tasty cheddar, pecroino, asiago, or parmesan."],
+wine= {
+  "Bold Red":{
+    types:['malbec', 'syrah', 'shiraz', 'petite sirah', 'pinotage','cabernet sauvignon'],
     pairs:cheese[1],
     perf: cheese[2],
+    img: "http://winefolly.com/wp-content/uploads/2014/11/cabernet-cheddar-wine-cheese.jpg"
   },
-  mediumRed:{
+  "Medium Red":{
     types:['merlot', 'zinfandel', 'zin', 'cabernet franc', 'tempranillo', 'sangiovese'],
     pairs:[cheese[0],cheese[2]],
-    perf: cheese[3],
+    perf: cheese[1],
   },
-  lightRed:{
+  "Light Red":{
     types:['pinot noir', 'grenache', 'gamay'],
-    perf: cheese[0]
+    perf: cheese[0],
+    img: "http://winefolly.com/wp-content/uploads/2014/11/pinot-noir-gruyere-comte-wine-cheese.jpg"
   },
-  rose:{
+  "Rosé":{
     types:['white zinfandel', 'rose', 'garnacha rosado'],
     pairs:[cheese[0],cheese[1],cheese[2]],
   },
-  richWhite:{
-    types:['chardonnay', 'chard', 'semillon', 'viognier'],
+  "Rich White":{
+    types:['chardonnay', 'semillon', 'viognier'],
     pairs:cheese[2],
     perf: cheese[0],
+    img:"http://winefolly.com/wp-content/uploads/2014/11/chardonnay-brie-wine-cheese.jpg"
   },
-  lightWhite:{
+  "Light White":{
     types:['sauvignon blanc', 'albarino', 'pinot blanc', 'pinot gris', 'pinot grigio'],
     pairs:[cheese[0], cheese[1]],
+    img: "http://winefolly.com/wp-content/uploads/2014/11/sauvignon-blanc-wine-goat-cheese.jpg"
   },
-  sparkling:{
+  "Sparkling":{
     types:['champagne', 'prosecco', 'cava', 'sparkling wine', 'sparkling rose', 'cremant'],
     pairs:[cheese[0], cheese[1], cheese[2]],
+    img: "http://winefolly.com/wp-content/uploads/2014/11/prosecco-asiago-wine-cheese.jpg"
   },
-  sweetWhite:{
+  "Sweet White":{
     types:['moscato', 'riesling', 'chenin blanc'],
     pairs:[cheese[0],cheese[1]],
+<<<<<<< HEAD
     perf:["gouda"]
+=======
+    perf:["My favorite's gouda."],
+    img:"http://winefolly.com/wp-content/uploads/2014/11/riesling-fondue-wine-cheese.jpg"
+>>>>>>> dev-api
   },
-  dessert:{
+  "Dessert":{
     types:['port', 'sherry', 'madeira', 'muscat'],
     pairs:cheese[0],
     perf: cheese[1],
+    img:"http://winefolly.com/wp-content/uploads/2014/11/port-silton-wine-cheese-pairings.jpg"
   },
-  jokes:{
+  "Cheap Wines":{
     types:['franzia','three buck chuck'],
-    pairs: "string cheese",
-    perf: "velveeta",
+    pairs: "String cheese",
+    perf: "Velveeta",
+    img:"http://www.trbimg.com/img-53a32adf/turbine/chi-velveeta-recall-20140619-001/2048/2048x1326"
+  },
+  notPresent:{
+    types:undefined,
   }
 }

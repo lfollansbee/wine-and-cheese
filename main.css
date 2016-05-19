@@ -12,17 +12,32 @@
     color: #4d1a1c;
     font-weight: bold; }
 
+html {
+  background: url(corks.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 h1 {
   font-family: 'Italianno', cursive;
-  font-size: 8rem; }
+  font-size: 6rem;
+  color: #4d1a1c;
+  padding-top: 10px; }
+
+.form-group {
+  margin-bottom: 10px; }
 
 .subheading, label, #wineSearch {
   font-family: 'Poiret One', cursive;
-  font-size: 3rem; }
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #89525a; }
 
 label {
   font-size: 2.5rem;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #4d1a1c; }
 
 #wineSearch {
   background-color: #d7a67e;
@@ -31,5 +46,36 @@ label {
 
 #inputWine {
   font-family: 'Italianno', cursive;
-  font-size: 5rem;
-  margin-top: 10px; }
+  font-size: 4.5rem;
+  margin-top: 10px;
+  word-spacing: .5em;
+  color: #4d1a1c; }
+
+.pairings {
+  font-family: 'Poiret One', cursive;
+  color: #4d1a1c;
+  padding-bottom: 10px; }
+  .pairings h3 {
+    margin-top: 10px; }
+  .pairings #perf-heading, .pairings #pairs-heading {
+    font-size: 2.5rem;
+    font-weight: bold; }
+  .pairings p {
+    font-size: 1.75rem;
+    font-weight: bold; }
+
+.not-found {
+  color: #4d1a1c;
+  font-weight: bold; }
+
+#wine-class {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  color: #4d1a1c;
+  margin-bottom: 0; }
+
+.gouda {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-size: 2em;
+  color: #89525a; }
