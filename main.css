@@ -57,7 +57,7 @@ label {
   padding-bottom: 10px; }
   .pairings h3 {
     margin-top: 10px; }
-  .pairings h4 {
+  .pairings #perf-heading, .pairings #pairs-heading {
     font-size: 2.5rem;
     font-weight: bold; }
   .pairings p {
@@ -70,6 +70,7 @@ label {
 
 #wine-class {
   font-family: 'Poiret One', cursive;
+  font-weight: bold;
   color: #4d1a1c;
   margin-bottom: 0; }
 

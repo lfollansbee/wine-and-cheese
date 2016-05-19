@@ -43,7 +43,6 @@ $(document).ready(function(){
     displayInput(wineEntered)
     showPairings();
     changeImg();
-    showWineClass();
     // displayGouda();
   })
 });
@@ -55,11 +54,20 @@ function displayInput(){
   }
 }
 
+var picturedWine = ["cabernet sauvignon", "pinot noir", "chardonnay", "sauvignon blanc", "prosecco", "riesling", "port"]
 function changeImg(){
-  if(currentImg === undefined){//if there's no img for that class, change it to the default img
-    $(".img").attr("src", "http://winefolly.com/wp-content/uploads/2014/11/wine-and-cheese-pairing.jpg")
-  }else{
-    $(".img").attr("src", currentImg)
+  for(var i = 0; i<picturedWine.length; i++){
+    if (wineEntered === picturedWine[i]){
+      $(".img").attr("src", currentImg)
+      return
+    }else if(wineEntered === "shiraz"){
+      $("img").attr("src", "http://winefolly.com/wp-content/uploads/2014/11/shiraz-gouda-wine-cheese.jpg")
+      $("#perf").append(" It goes especially well with smoked gouda.")
+      return
+    }
+    else{
+      $(".img").attr("src", "http://winefolly.com/wp-content/uploads/2014/11/wine-and-cheese-pairing.jpg")
+    }
   }
 }
 
@@ -69,20 +77,23 @@ function showPairings(){
   $("#pairs, #perf").empty();//clears info from previous search
   if(cheesePair != undefined){//if the wine pairs with something
     $("#pairs-heading").removeClass("hidden");//display heading
-    console.log(cheesePair);
-    $("#pairs").append(cheesePair);//display info
+    breakPairs("#pairs", cheesePair);
   }
   if (cheesePerf != undefined){
     $("#perf-heading").removeClass("hidden");
-    $("#perf").append(cheesePerf);
+    breakPairs("#perf", cheesePerf);
   }
 }
 
-function showWineClass(){
-  $("#wine-class").empty();
-    $("#wine-class").append(wineClass + " Wines");
+function breakPairs (location, array){
+  if(array.length === 2 && typeof(array) == "object"){
+    $(location).append(array[0] + "<br>" + array[1]);
+  }else if(array.length > 2 && typeof(array) == "object"){
+    $(location).append(array[0] + "<br>" + array[1] + "<br>" + array[2]);
+  }else{
+    $(location).append(array);
   }
-
+}
 
 function displayGouda(){
   $(".gouda").addClass("hidden");
@@ -90,3 +101,19 @@ function displayGouda(){
     $(".gouda").removeClass("hidden");
   }
 }
+
+//changeImg function used before specifying images to wines
+// function changeImg(){
+//   if(currentImg === undefined){//if there's no img for that class, change it to the default img
+//     $(".img").attr("src", "http://winefolly.com/wp-content/uploads/2014/11/wine-and-cheese-pairing.jpg")
+//   } else{
+//     $(".img").attr("src", currentImg)
+//   }
+// }
+
+// function showWineClass(){
+//   $("#wine-class").empty();
+//   if (wineClass != "notPresent"){
+//     $("#wine-class").append(wineClass + " Wine");
+//   }
+// }
