@@ -43,7 +43,7 @@ $(document).ready(function(){
     displayInput(wineEntered)
     showPairings();
     changeImg();
-    displayGouda();
+    displayGouda()
   })
 });
 
@@ -57,16 +57,22 @@ function displayInput(){
 var picturedWine = ["cabernet sauvignon", "pinot noir", "chardonnay", "sauvignon blanc", "prosecco", "riesling", "port"]
 function changeImg(){
   for(var i = 0; i<picturedWine.length; i++){
-    if (wineEntered === picturedWine[i]){
-      $(".img").attr("src", currentImg)
-      return
-    }else if(wineEntered === "shiraz"){
-      $("img").attr("src", "http://winefolly.com/wp-content/uploads/2014/11/shiraz-gouda-wine-cheese.jpg")
-      $("#perf").append(" It goes especially well with smoked gouda.")
-      return
-    }
-    else{
-      $(".img").attr("src", "http://winefolly.com/wp-content/uploads/2014/11/wine-and-cheese-pairing.jpg")
+    switch(wineEntered){
+      case (picturedWine[i]):
+        $(".img").attr("src", currentImg);
+        return;
+        break;
+      case ("franzia"|| "three buck chuck"):
+        $(".img").attr("src", currentImg);
+        return;
+        break;
+      case ("shiraz"):
+        $("img").attr("src", "http://winefolly.com/wp-content/uploads/2014/11/shiraz-gouda-wine-cheese.jpg");
+        $("#perf").append(" It goes especially well with smoked gouda.");
+        return;
+        break;
+      default:
+        $(".img").attr("src", "http://winefolly.com/wp-content/uploads/2014/11/wine-and-cheese-pairing.jpg")
     }
   }
 }
