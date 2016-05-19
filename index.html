@@ -15,13 +15,13 @@
 
   <body>
     <header class="page-header">
-      <h1 class="text-center">Cheesy Wine Pairings<br><small class="subheading">Find a cheese to go with your wine!</small></h1>
+      <h1 class="text-center">Cheesy Wine Pairings<br><small class="subheading">Find a cheese type to go with your wine!</small></h1>
     </header>
 
     <main>
       <div class="container">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-6">
             <form class="form-group form-group-md">
               <label for="wineSearch">Find a Pairing:</label>
               <input type="search" class="form-control center-block" id="wineSearch" placeholder="Your Wine" autocomplete="off">
@@ -32,7 +32,6 @@
               <h2 id="inputWine" class="text-center"></h2>
               <p class="not-found hidden text-center">Sorry, I don't recognize that wine. Are you sure your spelling is correct?</p>
               <div class="pairings col-md-12 hidden">
-                <h3 id="wine-class"><h3>
                 <h4 id="perf-heading"class="hidden">Pairs perfectly with:</h4>
                 <p id="perf"></p>
                 <h4 id="pairs-heading" class="hidden">Pairs well with:</h4>
@@ -41,20 +40,21 @@
             </div>
           </div>
 
-          <div class="col-md-offset-2 col-md-5">
+          <div class="col-md-offset-1 col-md-5">
             <a href="http://winefolly.com/tutorial/wine-cheese-pairing-ideas/" target="_blank">
               <img src="http://winefolly.com/wp-content/uploads/2014/11/wine-and-cheese-pairing.jpg" class="img-responsive img">
             </a>
           </div>
         </div>
-
-        <div class="goudarow">
-          <div class="col-md-offset-2 col-md-8 hidden">
-            <p class="text-center">Have a gouda day!</p>
-          </div>
-        </div>
       </div>
     </main>
+    <footer>
+      <div class="row">
+        <div class="col-md-offset-4 col-md-4 gouda hidden">
+          <p class="text-center">Have a gouda day!</p>
+        </div>
+      </div>
+    </footer>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

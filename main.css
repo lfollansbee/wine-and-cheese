@@ -19,20 +19,29 @@ html {
   -o-background-size: cover;
   background-size: cover; }
 
+body {
+  background-color: rgba(215, 166, 126, 0.8); }
+  body header, body main {
+    background-color: white; }
+
+.page-header {
+  margin-bottom: 0px; }
+
 h1 {
   font-family: 'Italianno', cursive;
   font-size: 6rem;
   color: #4d1a1c;
-  padding-top: 10px; }
-
-.form-group {
-  margin-bottom: 10px; }
+  padding-top: 15px; }
 
 .subheading, label, #wineSearch {
   font-family: 'Poiret One', cursive;
   font-size: 2.5rem;
   font-weight: bold;
   color: #89525a; }
+
+.form-group {
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 label {
   font-size: 2.5rem;
@@ -51,6 +60,9 @@ label {
   word-spacing: .5em;
   color: #4d1a1c; }
 
+.img {
+  margin-bottom: 20px; }
+
 .pairings {
   font-family: 'Poiret One', cursive;
   color: #4d1a1c;
@@ -61,7 +73,7 @@ label {
     font-size: 2.5rem;
     font-weight: bold; }
   .pairings p {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: bold; }
 
 .not-found {
@@ -76,6 +88,6 @@ label {
 
 .gouda {
   font-family: 'Poiret One', cursive;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 2em;
-  color: #89525a; }
+  color: #4d1a1c; }
