@@ -44,7 +44,7 @@ $(document).ready(function(){
     showPairings();
     changeImg();
     showWineClass();
-    $(".gouda").removeClass("hidden");
+    // displayGouda();
   })
 });
 
@@ -72,15 +72,21 @@ function showPairings(){
     console.log(cheesePair);
     $("#pairs").append(cheesePair);//display info
   }
-  if (cheesePerf != undefined){//if the wine has a perfect pairing
-    $("#perf-heading").removeClass("hidden");//display heading
-    $("#perf").append(cheesePerf);//display info
+  if (cheesePerf != undefined){
+    $("#perf-heading").removeClass("hidden");
+    $("#perf").append(cheesePerf);
   }
 }
 
 function showWineClass(){
-  $("#wine-class").empty();//clears info from previous search
+  $("#wine-class").empty();
+    $("#wine-class").append(wineClass + " Wines");
+  }
+
+
+function displayGouda(){
+  $(".gouda").addClass("hidden");
   if (wineClass != "notPresent"){
-    $("#wine-class").append(wineClass);//display info
+    $(".gouda").removeClass("hidden");
   }
 }
