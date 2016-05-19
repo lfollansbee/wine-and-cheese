@@ -43,7 +43,7 @@ $(document).ready(function(){
     displayInput(wineEntered)
     showPairings();
     changeImg();
-    // displayGouda();
+    displayGouda();
   })
 });
 
