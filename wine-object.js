@@ -39,12 +39,8 @@ wine= {
   "Sweet White":{
     types:['moscato', 'riesling', 'chenin blanc'],
     pairs:[cheese[0],cheese[1]],
-<<<<<<< HEAD
-    perf:["gouda"]
-=======
     perf:["My favorite's gouda."],
     img:"http://winefolly.com/wp-content/uploads/2014/11/riesling-fondue-wine-cheese.jpg"
->>>>>>> dev-api
   },
   "Dessert":{
     types:['port', 'sherry', 'madeira', 'muscat'],

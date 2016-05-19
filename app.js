@@ -62,7 +62,7 @@ function changeImg(){
         $(".img").attr("src", currentImg);
         return;
         break;
-      case ("franzia"|| "three buck chuck"):
+      case ("franzia"):
         $(".img").attr("src", currentImg);
         return;
         break;
