@@ -17,7 +17,7 @@ function search(input){
     currentType = wine[wineClass].types;
     inSystem = isInSystem(currentType, input);//runs the current type of wine through the system function to see if the input wine is in it's types array
     if (inSystem === true){
-      return wineClass;//if found, this ends the function
+      return wineClass;
     }
   }
 }
@@ -48,9 +48,9 @@ $(document).ready(function(){
 });
 
 function displayInput(){
-  $("#inputWine").empty();//clearing previous search
+  $("#inputWine").empty();
   if (wineClass != "notPresent"){
-    $("#inputWine").append(wineEntered.toUpperCase());//appends the entered wine to the DOM
+    $("#inputWine").append(wineEntered.toUpperCase());
   }
 }
 
