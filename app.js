@@ -71,6 +71,11 @@ function changeImg(){
         $("#perf").append(" It goes especially well with smoked gouda.");
         return;
         break;
+      case ("pinot noir"):
+        $("img").attr("src", "http://winefolly.com/wp-content/uploads/2014/11/pinot-noir-gruyere-comte-wine-cheese.jpg")
+        $("#perf").append(" It goes especially well with gruyere.");
+        return;
+        break;
       default:
         $(".img").attr("src", "http://winefolly.com/wp-content/uploads/2014/11/wine-and-cheese-pairing.jpg")
     }

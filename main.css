@@ -17,7 +17,8 @@ html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden; }
 
 body {
   background-color: rgba(215, 166, 126, 0.8); }
@@ -49,8 +50,11 @@ label {
   color: #4d1a1c; }
 
 #wineSearch {
-  background-color: #d7a67e;
+  font-family: 'Poiret One', cursive;
+  font-size: 2rem;
+  font-weight: bold;
   color: #4d1a1c;
+  background-color: #d7a67e;
   margin-bottom: .25em; }
 
 #inputWine {
