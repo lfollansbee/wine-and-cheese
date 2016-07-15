@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="wine.png">
     <title>Cheesy Wine Pairings</title>
+    <link rel="icon" type="img/png" href="https://cdn4.iconfinder.com/data/icons/vivala-coffee-house-icons/512/wine-128.png">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -15,13 +16,13 @@
 
   <body>
     <header class="page-header">
-      <h1 class="text-center">Cheesy Wine Pairings<br><small class="subheading">Find a cheese type to go with your wine!</small></h1>
+      <h1 class="text-center">Cheesy Wine Pairings<br><small class="subheading">Find a cheese to go with your wine!</small></h1>
     </header>
 
     <main>
-      <div class="container">
+      <section class="container">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-6">
             <form class="form-group form-group-md">
               <label for="wineSearch">Find a Pairing:</label>
               <input type="search" class="form-control center-block" id="wineSearch" placeholder="Your Wine" autocomplete="off">
@@ -32,35 +33,35 @@
               <h2 id="inputWine" class="text-center"></h2>
               <p class="not-found hidden text-center">Sorry, I don't recognize that wine. Are you sure your spelling is correct?</p>
               <div class="pairings col-md-12 hidden">
-                <h3 id="wine-class"><h3>
-                <h4 id="perf-heading"class="hidden">Pairs perfectly with:</h4>
+                <h4 id="perf-heading" class="hidden">Pairs perfectly with:</h4>
                 <p id="perf"></p>
                 <h4 id="pairs-heading" class="hidden">Pairs well with:</h4>
                 <p id="pairs"></p>
               </div>
             </div>
           </div>
-
-          <div class="col-md-offset-2 col-md-5">
+          <div class="col-md-offset-1 col-md-5">
             <a href="http://winefolly.com/tutorial/wine-cheese-pairing-ideas/" target="_blank">
-              <img src="http://winefolly.com/wp-content/uploads/2014/11/wine-and-cheese-pairing.jpg" class="img-responsive img">
+              <img src="http://winefolly.com/wp-content/uploads/2014/11/wine-and-cheese-pairing.jpg" alt = "" class="img-responsive img">
             </a>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-md-offset-2 col-md-8 hidden gouda">
-            <p class="text-center">Have a gouda day!</p>
-          </div>
+      </section>
+    </main>
+    <footer>
+      <div class="row">
+        <div class="col-md-offset-4 col-md-4 gouda hidden">
+          <p class="text-center">Have a gouda day!</p>
         </div>
       </div>
-    </main>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!-- <script type="text/javascript" src="wine-object.js"></script> -->
+    <script type="text/javascript" src="wine-object.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
     <script type="text/javascript" src="app.js"></script>
 
   </body>

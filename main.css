@@ -12,44 +12,86 @@
     color: #4d1a1c;
     font-weight: bold; }
 
+html {
+  background: url(corks.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden; }
+
+body {
+  background-color: rgba(215, 166, 126, 0.8); }
+  body header, body main {
+    background-color: white; }
+
+.page-header {
+  margin-bottom: 0px; }
+
 h1 {
   font-family: 'Italianno', cursive;
-  font-size: 6rem; }
+  font-size: 6rem;
+  color: #4d1a1c;
+  padding-top: 15px; }
 
 .subheading, label, #wineSearch {
   font-family: 'Poiret One', cursive;
-  font-size: 2rem;
-  font-weight: bold; }
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #89525a; }
+
+.form-group {
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 label {
   font-size: 2.5rem;
-  font-weight: bold; }
-
-.form-group {
-  margin-bottom: 10px; }
+  font-weight: bold;
+  color: #4d1a1c; }
 
 #wineSearch {
-  background-color: #d7a67e;
+  font-family: 'Poiret One', cursive;
+  font-size: 2rem;
+  font-weight: bold;
   color: #4d1a1c;
+  background-color: #d7a67e;
   margin-bottom: .25em; }
 
 #inputWine {
   font-family: 'Italianno', cursive;
-  font-size: 5rem;
+  font-size: 4.5rem;
   margin-top: 10px;
-  word-spacing: .5em; }
+  word-spacing: .5em;
+  color: #4d1a1c; }
+
+.img {
+  margin-bottom: 20px; }
 
 .pairings {
-  font-family: 'Poiret One', cursive; }
+  font-family: 'Poiret One', cursive;
+  color: #4d1a1c;
+  padding-bottom: 10px; }
   .pairings h3 {
     margin-top: 10px; }
-  .pairings h4 {
+  .pairings #perf-heading, .pairings #pairs-heading {
     font-size: 2.5rem;
     font-weight: bold; }
   .pairings p {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: bold; }
 
 .not-found {
   color: #4d1a1c;
   font-weight: bold; }
+
+#wine-class {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  color: #4d1a1c;
+  margin-bottom: 0; }
+
+.gouda {
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+  font-size: 2em;
+  color: #4d1a1c; }

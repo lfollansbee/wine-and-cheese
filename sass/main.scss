@@ -2,53 +2,106 @@
 @import "fonts";
 @import "button";
 
+html{
+  background: url(corks.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+body{
+  background-color: rgba(215, 166, 126,0.8);
+  header, main{
+    background-color: white;
+  }
+}
+
+.page-header{
+  margin-bottom: 0px;
+}
+
 h1{
   font-family:  'Italianno', cursive;
   font-size: 6rem;
+  color: $darkred;
+  padding-top:15px;
 }
+
 .subheading{
   font-family: 'Poiret One', cursive;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  color: $blush;
+}
+
+.form-group{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 label{
   @extend .subheading;
   font-size: 2.5rem;
   font-weight: bold;
-}
-.form-group{
-  margin-bottom: 10px;
+  color: $darkred;
 }
 
 #wineSearch{
-  background-color: $lightbeige;
+  font-family: 'Poiret One', cursive;
+  font-size: 2rem;
+  font-weight: bold;
   color: $darkred;
+  background-color: $lightbeige;
   @extend .subheading;
   margin-bottom: .25em;
 }
+
 #inputWine{
   font-family: 'Italianno', cursive;
-  font-size: 5rem;
+  font-size: 4.5rem;
   margin-top: 10px;
   word-spacing: .5em;
+  color: $darkred;
+}
+
+.img{
+  margin-bottom: 20px;
 }
 
 .pairings{
   font-family: 'Poiret One', cursive;
+  color: $darkred;
+  padding-bottom:10px;
   h3{
     margin-top: 10px;
   }
-  h4{
+  #perf-heading, #pairs-heading{
     font-size: 2.5rem;
     font-weight: bold;
   }
   p{
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: bold;
   }
 }
+
 .not-found{
   color: $darkred;
   font-weight: bold;
+}
+
+#wine-class{
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  color: $darkred;
+  margin-bottom: 0;
+}
+
+.gouda{
+  font-family: 'Poiret One', cursive;
+  font-weight: bolder;
+  font-size: 2em;
+  color: $darkred;
 }

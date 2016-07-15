@@ -1,5 +1,5 @@
 {
-  "firebase": "wine-and-cheese-test",
+  "firebase": "cheesy-wine-pairs",
   "public": ".",
   "ignore": [
     "firebase.json",
