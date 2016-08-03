@@ -1,4 +1,4 @@
-cheese= ["Soft cheeses such as goat cheese, brie, or mascarpone.<br>", "Pungent cheeses. Try gorgonzola or a nice bleu cheese.<br>", "Hard cheeses, like a tasty cheddar, pecroino, asiago, or parmesan."],
+cheese= ["Soft cheeses such as goat cheese, brie, or mascarpone.", "Pungent cheeses. Try gorgonzola or a nice bleu cheese.", "Hard cheeses, like a tasty cheddar, pecroino, asiago, or parmesan."],
 wine= {
   "Bold Red":{
     types:['malbec', 'syrah', 'shiraz', 'petite sirah', 'pinotage','cabernet sauvignon'],
