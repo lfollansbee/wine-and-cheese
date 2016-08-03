@@ -1,11 +1,9 @@
-var wine = 0
+var wine = wine
 var allWines = 0
 $(document).ready(function(){
-  $.get("https://warm-spire-51273.herokuapp.com/", function(data) {
-    cheese = data.cheese;
-    wine = data.wine;
-    allWines = Object.keys(data.wine);
-  });
+    cheese = cheese;
+    wine = wine;
+    allWines = Object.keys(wine);
 });
 
 $(document).ready(function(){
