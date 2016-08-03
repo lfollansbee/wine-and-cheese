@@ -1,9 +1,11 @@
-var wine = wine
+var wine = 0
 var allWines = 0
 $(document).ready(function(){
-    cheese = cheese;
-    wine = wine;
+  $.get("https://polar-tor-27612.herokuapp.com/", function(data) {
+    // cheese = data.cheese;
+    wine = data.wine;
     allWines = Object.keys(wine);
+  });
 });
 
 $(document).ready(function(){
